@@ -1,0 +1,495 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #ffd699; /* Pastel yellow */
+    color: #333; /* Dark text */
+    padding: 20px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    color: #333; /* Dark text */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #f59e9e; /* Pastel red */
+}
+/* CSS for navigation buttons hover effect */
+.nav-links li a {
+    color: #333; /* Default text color */
+    transition: color 0.3s ease; /* Smooth transition effect */
+}
+
+.nav-links li a:hover {
+    color: #ff6f61; /* Change text color on hover */
+}
+
+
+.hero {
+    background-image: url('herobackground.jpg'); /* Replace with your hero image */
+    background-size: cover;
+    color: #fff; /* Light text */
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+/* Additional CSS for interactive buttons */
+.btn {
+    display: inline-block;
+    background-color: #f59e9e; /* Pastel red */
+    color: #fff; /* Light text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.btn:hover {
+    background-color: #ff7b7b; /* Lighter pastel red on hover */
+}
+
+
+.featured-products {
+    background-color: #f8f8f8; /* Light gray */
+    padding: 50px 0;
+}
+
+.featured-products h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: #ffd699; /* Pastel yellow */
+    color: #333; /* Dark text */
+    padding: 20px 0;
+    text-align: center;
+    
+}
+/* File: styles.css */
+/* Your existing CSS styles */
+
+/* Additional CSS for fixed image sizes and visible borders */
+/* File: styles.css */
+/* Your existing CSS styles */
+
+/* Additional CSS for fixed image sizes, visible borders, and smaller images */
+.product {
+    padding: 15px; /* Add padding to separate content from the border */
+    margin-bottom: 20px; /* Add margin to create space between product items */
+}
+
+.product img {
+    width: 150px; /* Adjust the width as needed to make the images smaller */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid #aaa; /* Border style directly on the image */
+    border-radius: 5px; /* Rounded corners */
+    box-sizing: border-box; /* Include border in image dimensions */
+}
+
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-links li:last-child {
+    margin-right: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #666;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #000;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.product {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+.product img {
+    width: 200px;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+/* CSS for image hover effect */
+.product-image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-image-container:hover .product-image-overlay {
+    opacity: 1;
+}
+
+.product-image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-image-overlay p {
+    color: #fff;
+    font-size: 16px;
+}
+
+/* CSS for lightbox gallery */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+}
+
+.lightbox img {
+    max-width: 80%;
+    max-height: 80%;
+    display: block;
+    margin: auto;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.product h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-weight: bold;
+    color: #008cba;
+    margin-bottom: 10px;
+}
+/* Your existing CSS styles */
+
+.cart {
+    padding: 50px 0;
+}
+
+.cart-items {
+    margin-bottom: 30px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.cart-item img {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.item-details {
+    flex: 1;
+}
+
+.item-details h2 {
+    margin-bottom: 10px;
+}
+
+.price {
+    font-weight: bold;
+    color: #008cba;
+}
+
+.item-actions {
+    margin-left: auto;
+}
+
+.btn-remove {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-remove:hover {
+    background-color: #c0392b;
+}
+
+.cart-summary {
+    text-align: right;
+}
+
+.total-price {
+    font-weight: bold;
+}
+
+/* Add styles for testimonials and social media links */
+.testimonials {
+    background-color: #f9f9f9; /* Light gray background */
+    padding: 50px 0;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.testimonial {
+    position: relative; /* Relative positioning for the bubble */
+    display: inline-block;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff; /* White background */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+.testimonial:before {
+    content: ""; /* Empty content for the pseudo-element */
+    position: absolute; /* Absolute positioning */
+    bottom: -20px; /* Adjust position to stick out below the bubble */
+    left: 50%; /* Center horizontally */
+    width: 40px; /* Width of the triangle */
+    height: 40px; /* Height of the triangle */
+    background-color: #fff; /* Match background color of the bubble */
+    transform: translateX(-50%) rotate(45deg); /* Rotate and position the triangle */
+    box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+.testimonial p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.customer {
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+.customer {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.social-links li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-links li a {
+    text-decoration: none;
+}
+
+.social-links li a img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Add CSS styles for items section */
+/* CSS for items section */
+/* CSS for items section */
+.items {
+    background-color: #f8f8f8;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.items h2 {
+    font-size: 42px;
+    margin-bottom: 60px;
+    color: #333;
+}
+
+.item-list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.item {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    width: calc(33.33% - 80px); /* Adjust width to maintain spacing between items */
+    margin: 40px; /* Add margin for spacing between items */
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Aligns items vertically */
+    height: 400px; /* Adjust height as needed */
+}
+
+.item:hover {
+    transform: translateY(-10px) scale(1.05);
+}
+
+.item img {
+    width: 200px; /* Set a fixed width for the image */
+    height: 200px; /* Set a fixed height for the image */
+    object-fit: cover; /* Maintain aspect ratio and cover container */
+    border-radius: 10px;
+    margin: 0 auto 20px auto; /* Center image vertically and add bottom margin */
+    transition: transform 0.3s ease;
+}
+
+.item:hover img {
+    transform: scale(1.1);
+}
+
+.item h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #333;
+    line-height: 1.2; /* Adjust line height for symmetrical font positioning */
+}
+
+.price {
+    font-weight: bold;
+    color: #008cba;
+    margin-bottom: 15px;
+    font-size: 24px;
+    line-height: 1.2; /* Adjust line height for symmetrical font positioning */
+}
+
+.item-overlay {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.item:hover .item-overlay {
+    opacity: 1;
+}
+
+.item-overlay-content {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.item:hover .item-overlay-content {
+    opacity: 1;
+}
+
+.item-overlay-content a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #f59e9e;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+}
+
+.item-overlay-content a:hover {
+    background-color: #ff7b7b;
+}

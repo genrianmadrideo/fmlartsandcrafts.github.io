@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add CSS styles for header */
+        header {
+            background-color: #ffd699;
+            color: #333;
+            padding: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .nav-links li a {
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s;
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .nav-links li a:hover {
+            color: #f59e9e;
+            background-color: #fff;
+        }
+
+        /* Add CSS styles for hero section */
+        .hero {
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            position: relative;
+            overflow: hidden;
+            color: #fff;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('hero1.jpg');
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            line-height: 1.3;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 40px;
+            line-height: 1.5;
+        }
+
+        .hero .btn {
+            background-color: #f59e9e;
+            color: #fff;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .hero .btn:hover {
+            background-color: #ff7b7b;
+        }
+
+        /* Add CSS styles for testimonials section */
+        .testimonials {
+            background-color: #f9f9f9;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .testimonial {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            display: inline-block;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .testimonial p {
+            font-size: 18px;
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+
+        .testimonial .customer {
+            font-style: italic;
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* Add CSS styles for footer */
+        footer {
+            background-color: #ffd699;
+            color: #333;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .social-links {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .social-links li a img {
+            width: 40px;
+            height: 40px;
+            transition: transform 0.3s;
+        }
+
+        .social-links li a img:hover {
+            transform: scale(1.2);
+        }
+
+        .footer-text {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+
+        /* Modal content */
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto; /* 15% from the top and centered */
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%; /* Could be more or less, depending on screen size */
+        }
+
+        /* Close button */
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">FML Arts & Crafts</div>
+            <ul class="nav-links">
+                <li><a href="Explore.html">Shop</a></li>
+                <li><a href="inspiration.html">Inspiration</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to FML</h1>
+            <p>There is no must in art because art is free</p>
+            <a href="Explore.html" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial">
+                <p>"Love the handmade bouquet! Exceptional craftsmanship, stunning flowers. Recipient was thrilled. Will be back and recommend. Thanks for the unforgettable moment!"</p>
+                <p class="customer">- Symon Regala</p>
+            </div>
+            <div class="testimonial">
+                <p>"The quality and nostalgic charm are beyond words. Each piece feels like a cherished memory, making every note a heartfelt experience. Thank you for bringing such sentiment and craftsmanship into my life!"</p>
+                <p class="customer">- Jane Severino </p>
+            </div>
+            
+              <div class="testimonial">
+                <p>"Vintage stationery is pure joy! Each piece brings back happy memories, turning every note into a cheerful experience. Thank you for this delightful journey!"</p>
+                <p class="customer">- Alfred Francis Rivera</p>
+            </div>
+            
+        </div>
+    </section>
+<!-- Items Section -->
+<section class="items">
+        <div class="container">
+            <h2>Best Seller Items</h2>
+            <div class="item-list">
+                <div class="item" onclick="openModal('myModal1')">
+                    <img src="5.jpg" alt="Kangkong">
+                    <h2>Stationery package</h2>
+                    <p class="price">$10.00</p>
+                </div>
+                <div class="item" onclick="openModal('myModal2')">
+                    <img src="2.jpg" alt="Handmade Bouquet">
+                    <h2>Handmade Bouquet</h2>
+                    <p class="price">$7.50</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+
+    <footer>
+        <div class="container">
+            <ul class="social-links">
+                <li><a href="https://www.facebook.com/mlktmami"><img src="blossomlink.png" alt="Blossom"></a></li>
+                <li><a href="https://www.facebook.com/genrianmadrideo.1618"><img src="bubbleslink.png" alt="Bubbles"></a></li>
+                <li><a href="https://www.facebook.com/mysachieee"><img src="buttercuplink.png" alt="Buttercup"></a></li>
+            </ul>
+            <p class="footer-text">&copy; 2024 Arts & Crafts</p>
+        </div>
+    </footer>
+    
+     <div id="myModal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('myModal1')">&times;</span>
+            <h2>Stationery package Details</h2>
+            <p>Introducing our Vintage-Inspired Stationery Collection <br> A timeless ensemble that captures the charm and grace of bygone eras. Immerse yourself in the nostalgia of handwritten notes and the artistry of a bygone era with this meticulously curated set, designed for those who appreciate the enduring allure of vintage craftsmanship.</p>
+            <p class="price">$10.00</p>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div id="myModal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('myModal2')">&times;</span>
+            <h2>Handmade Bouquet</h2>
+            <p>Introducing our Handmade Bouquet <br> A masterpiece of artistry and love, thoughtfully crafted to bring joy and beauty to your special moments. Each element of this bouquet is a testament to the dedication and skill of our artisans, creating a one-of-a-kind arrangement that surpasses the ordinary.</p>
+            <p class="price">$7.50</p>
+        </div>
+    </div>
+
+
+    <!-- JavaScript for Hero Section Slideshow -->
+    <script>
+        const images = ['hero1.jpg', 'hero2.jpg', 'hero3.jpg']; // Replace with actual image URLs
+
+        let currentIndex = 0;
+
+        function changeBackground() {
+            document.querySelector('.hero').style.backgroundImage = `url(${images[currentIndex]})`;
+            currentIndex = (currentIndex + 1) % images.length;
+        }
+
+        // Change background every 5 seconds
+        setInterval(changeBackground, 5000);
+        
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = "block";
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = "none";
+        }
+    </script>
+</body>
+</html>

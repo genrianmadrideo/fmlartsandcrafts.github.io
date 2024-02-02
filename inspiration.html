@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspiration Page</title>
+    <style>
+        /* Custom styles for the Inspiration Page with pastel color palette */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f9f9f9; /* Light gray background */
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #ffcc99; /* Pastel orange */
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 32px;
+            font-weight: bold;
+            color: #333; /* Dark gray */
+            text-transform: uppercase;
+        }
+
+        .nav-links {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        .nav-links li a {
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s;
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .nav-links li a:hover {
+            color: #f59e9e;
+            background-color: #fff;
+        }
+
+        .hero {
+            background-image: url('hero1.jpg'); /* Path to your hero image */
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 150px 0;
+        }
+
+        .hero-title {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #fff; /* White */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for emphasis */
+        }
+
+        .hero-description {
+            font-size: 24px;
+            margin-bottom: 40px;
+            color: #fff; /* White */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Text shadow for emphasis */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .section {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 42px;
+            font-weight: bold;
+            margin-bottom: 40px;
+            color: #333; /* Dark gray */
+            text-transform: uppercase;
+        }
+
+        .section-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .section-content p {
+            font-size: 20px;
+            color: #666; /* Gray */
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #a3d8f4; /* Pastel blue */
+            color: #fff;
+            padding: 12px 24px;
+            font-size: 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            cursor: pointer;
+            border: none;
+            outline: none;
+        }
+
+        .btn:hover {
+            background-color: #7bb8e3; /* Darker blue on hover */
+        }
+
+        footer {
+            background-color: #cccccc; /* Light gray */
+            color: #333;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Popup Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+        }
+
+        .modal-content {
+            background-color: #fff;
+            margin: 15% auto;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 400px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .modal-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #333; /* Dark gray */
+        }
+
+        .modal-message {
+            font-size: 18px;
+            color: #666; /* Gray */
+            margin-bottom: 20px;
+        }
+
+        .modal-close {
+            background-color: #ffb3ba; /* Pastel red */
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            outline: none;
+        }
+
+        .modal-close:hover {
+            background-color: #ff7b81; /* Darker red on hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">FML - Art & Stationery</div>
+        <ul class="nav-links">
+            <li><a href="Homepage.html">Home</a></li>
+            <li><a href="Explore.html">Shop</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">"Every child is an artist.</h1>
+             <h1 class="hero-title">The problem is how to remain an artist once we grow up."</h1>
+            <p class="hero-description">~Pablo Picasso</p>
+        </div>
+    </section>
+
+    <!-- Featured Inspiration Section -->
+    <section class="section" style="background-color: #ffd9b3;"> <!-- Pastel orange -->
+        <div class="container">
+            <h2 class="section-title">Background of "FML" - Art & Stationery </h2>
+            <div class="section-content">
+                <button class="btn" onclick="openModal('Background of FML', 'We believe in the power of heartfelt gestures, and our mission is to bring creativity to life through our exquisite handmade crafts. Our passion lies in creating unique and personalized items that serve as the perfect gifts for your loved ones, turning ordinary moments into extraordinary memories.')">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Inspiration Section -->
+     <section class="section" style="background-color: #ffb3ba;"> <!-- Pastel pink -->
+        <div class="container">
+            <h2 class="section-title">Our Inspiration </h2>
+            <div class="section-content">
+                <button class="btn" onclick="openModal('Our Inspiration', 'FML draws inspiration from the beauty of human connection, celebrating the intricate details that make each relationship special. We are driven by a love for craftmanship and a desire to add a touch of artistic flair to our life and its significant occasions')">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Artisanal Touch Section -->
+<section class="section" style="background-color: #c9f7ef;"> <!-- Pastel blue -->
+        <div class="container">
+            <h2 class="section-title">The Artisanal Touch</h2>
+            <div class="section-content">
+                <button class="btn" onclick="openModal('The Artisanal Touch', 'Every product at FML is carefully crafted . We pour our creativity into every item, ensuring that each creation tells a story. From personalized greeting cards to intricately designed junk journals, our products are more than just stationery – they are expressions of love and care.')">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Share Your Creations Section -->
+  <section class="section" style="background-color: #ffcccc;"> <!-- Pastel red -->
+        <div class="container">
+            <h2 class="section-title">Unique and Personalized</h2>
+            <div class="section-content">
+                <button class="btn" onclick="openModal('Unique and Personalized', 'What sets FML apart is our commitment to providing a personalized touch to every creation. We understand that each relationship is unique, and our range of handmade crafts reflects this diversity. Whether you are looking for a one-of-a-kind birthday card, a customized journal, or a special keepsake, FML has the perfect creation to suit every occasion.')">Learn More</button>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section" style="background-color: #c2f0c2;"> <!-- Pastel green -->
+        <div class="container">
+            <h2 class="section-title">Gifts with a Heart</h2>
+            <div class="section-content">
+                <button class="btn" onclick="openModal('Gifts with a Heart', 'Our collection is designed to evoke emotions and create lasting impressions. We believe that the best gifts come from the heart, and that is why FML is dedicated to helping you express your feelings through the art of gifting. Whether it is a romantic gesture, a token of appreciation, or a thoughtful surprise, our handmade crafts add a personal touch to every present.')">Learn More</button>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section" style="background-color: #ffcc99;"> <!-- Pastel orange -->
+        <div class="container">
+            <h2 class="section-title">Sustainable Practices</h2>
+            <div class="section-content">
+                <button class="btn" onclick="openModal('Sustainable Practices', 'At FML, we are not just committed to creating beautiful products; we are also mindful of our impact on the environment. We prioritize sustainable and eco-friendly materials, ensuring that our creations are not only visually appealing but also aligned with our responsibility towards the planet.')">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 FML - Art & Stationery</p>
+        </div>
+    </footer>
+
+    <!-- Popup Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <h2 class="modal-title" id="modalTitle"></h2>
+            <p class="modal-message" id="modalMessage"></p>
+            <button class="btn modal-close" onclick="closeModal()">OK</button>
+        </div>
+    </div>
+
+    <script>
+        function openModal(title, message) {
+            document.getElementById('modalTitle').innerHTML = title;
+            document.getElementById('modalMessage').innerHTML = message;
+            document.getElementById('myModal').style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById('myModal').style.display = "none";
+        }
+    </script>
+</body>
+</html>
